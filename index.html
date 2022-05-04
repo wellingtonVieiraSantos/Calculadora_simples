@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Calculadora</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script defer src="./calculadora.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <header>Calculadora</header>
+    <section id="corpo">
+
+        <input type="text" name="display2" id="display2">
+        <input type="text" name="display" id="display">
+
+        <table>
+            <tr class="col">
+                <td><input type="button" value="%" id="porcento"></td>
+                <td><input type="button" value="ce" id="ce"></td>
+                <td><input type="button" value="c" id="c"></td>
+                <td><input class="operador" type="button" value="+" id="soma"></td>
+            </tr>
+            <tr class="col">
+                <td><input class="num" type="button" value="7"></td>
+                <td><input class="num" type="button" value="8"></td>
+                <td><input class="num" type="button" value="9"></td>
+                <td><input class="operador" type="button" value="-"></td>
+            </tr>
+            <tr class="col">
+                <td><input class="num" type="button" value="4"></td>
+                <td><input class="num" type="button" value="5"></td>
+                <td><input class="num" type="button" value="6"></td>
+                <td><input class="operador" type="button" value="x"></td>
+            </tr>
+            <tr class="col">
+                <td><input class="num" type="button" value="1"></td>
+                <td><input class="num" type="button" value="2"></td>
+                <td><input class="num" type="button" value="3"></td>
+                <td><input class="operador" type="button" value="÷"></td>
+            </tr>
+            <tr class="col">
+                <td><input type="button" value="+/-" id="mais-menos"></td>
+                <td><input class="num" type="button" value="0"></td>
+                <td><input type="button" value="," id="ponto"></td>
+                <td><input type="button" value="=" id="igual" onclick="igual()"></td>
+            </tr>
+        </table>
+
+    </section>
+
+    <footer>&copy; Wellington</footer>
+</body>
+
+</html>
